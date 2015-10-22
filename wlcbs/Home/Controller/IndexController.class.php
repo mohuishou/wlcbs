@@ -49,7 +49,7 @@ class IndexController extends Controller {
                 'data'=>$b
             ]);
         }else{
-            $this->ajaxRrturn([
+            $this->ajaxReturn([
                     'status'=>0,
                     'message'=>'获取数据出错！'
                 ]
