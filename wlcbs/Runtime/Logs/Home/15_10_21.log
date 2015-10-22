@@ -1,0 +1,426 @@
+[ 2015-10-21T09:58:54+08:00 ] ::1 /lxl520/kehu/wlcbs/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.302505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.147502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.147502s ]
+
+[ 2015-10-21T10:07:50+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=1&data=10023
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0070s ]
+SQL: INSERT INTO `wlcbs_data` (`data`,`ctime`,`uid`) VALUES ('10023','1445393269','1') [ RunTime:0.0700s ]
+
+[ 2015-10-21T10:07:56+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=1&data=30065
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0040s ]
+SQL: INSERT INTO `wlcbs_data` (`data`,`ctime`,`uid`) VALUES ('30065','1445393276','1') [ RunTime:0.1400s ]
+
+[ 2015-10-21T10:08:01+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=1&data=40059
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0030s ]
+SQL: INSERT INTO `wlcbs_data` (`data`,`ctime`,`uid`) VALUES ('40059','1445393280','1') [ RunTime:0.3770s ]
+
+[ 2015-10-21T10:21:14+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0070s ]
+SQL: SELECT MAX(id) AS tp_max FROM `wlcbs_data` LIMIT 1   [ RunTime:0.0550s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `id` = 6 AND `uid` = 1 LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014001s ]
+
+[ 2015-10-21T10:21:22+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0050s ]
+SQL: SELECT MAX(id) AS tp_max FROM `wlcbs_data` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `id` = 6 AND `uid` = 1 LIMIT 10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-21T10:21:56+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0070s ]
+SQL: SELECT MAX(id) AS tp_max FROM `wlcbs_data` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `uid` = 1 LIMIT 10   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-21T10:22:05+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0040s ]
+SQL: SELECT MAX(id) AS tp_max FROM `wlcbs_data` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-21T10:23:12+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0060s ]
+SQL: SELECT MAX(id) AS tp_max FROM `wlcbs_data` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `uid` = 1 ORDER BY id desc LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-21T10:23:22+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0040s ]
+SQL: SELECT MAX(id) AS tp_max FROM `wlcbs_data` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `uid` = 1 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-21T10:31:23+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wlcbs_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MAX(id) AS tp_max FROM `wlcbs_data` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `uid` = 1 AND `ctime` > null ORDER BY id desc LIMIT 4   [ RunTime:0.0520s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-21T10:31:24+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wlcbs_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MAX(id) AS tp_max FROM `wlcbs_data` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `uid` = 1 AND `ctime` > null ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-21T10:31:25+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wlcbs_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT MAX(id) AS tp_max FROM `wlcbs_data` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `uid` = 1 AND `ctime` > null ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-21T10:31:37+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `wlcbs_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT MAX(id) AS tp_max FROM `wlcbs_data` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `uid` = 1 AND `ctime` < null ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-21T10:35:43+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wlcbs_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `uid` = 1 AND `ctime` < null ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-21T10:36:00+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wlcbs_user` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `uid` = 1 AND `ctime` < null ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-21T10:36:47+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0050s ]
+SQL: SELECT `gtime` FROM `wlcbs_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `uid` = 1 AND `ctime` < '1444805971' ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-21T10:36:48+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0050s ]
+SQL: SELECT `gtime` FROM `wlcbs_user` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `uid` = 1 AND `ctime` < '1444805971' ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-21T10:37:02+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0030s ]
+SQL: SELECT `gtime` FROM `wlcbs_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `id` = 1 AND `ctime` < '1444805971' ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-10-21T10:37:02+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0050s ]
+SQL: SELECT `gtime` FROM `wlcbs_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `id` = 1 AND `ctime` < '1444805971' ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-21T10:37:10+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0030s ]
+SQL: SELECT `gtime` FROM `wlcbs_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `id` = 1 AND `ctime` < '1444805971' ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-21T10:37:10+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0010s ]
+SQL: SELECT `gtime` FROM `wlcbs_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `id` = 1 AND `ctime` < '1444805971' ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-21T10:37:58+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0040s ]
+SQL: SELECT `gtime` FROM `wlcbs_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `id` = 1 AND `ctime` < '1444805971' ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-21T10:38:08+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0030s ]
+SQL: SELECT `gtime` FROM `wlcbs_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `id` = 1 AND `ctime` > '1444805971' ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-21T10:38:08+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0050s ]
+SQL: SELECT `gtime` FROM `wlcbs_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `id` = 1 AND `ctime` > '1444805971' ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-21T10:38:13+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0060s ]
+SQL: SELECT `gtime` FROM `wlcbs_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `id` = 1 AND `ctime` > '1444805971' ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-21T10:38:14+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0030s ]
+SQL: SELECT `gtime` FROM `wlcbs_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `id` = 1 AND `ctime` > '1444805971' ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-21T10:39:04+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0060s ]
+SQL: SELECT `gtime` FROM `wlcbs_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `id` = 1 AND `ctime` > '1444805971' ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-21T10:39:51+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0040s ]
+SQL: SELECT `gtime` FROM `wlcbs_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `uid` = 1 AND `ctime` > '1444805971' ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-21T10:39:54+08:00 ] ::1 /lxl520/kehu/wlcbs/?action=2&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `wlcbs_data` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wlcbs_user` [ RunTime:0.0030s ]
+SQL: SELECT `gtime` FROM `wlcbs_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `data`,`ctime` FROM `wlcbs_data` WHERE `uid` = 1 AND `ctime` > '1444805971' ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
