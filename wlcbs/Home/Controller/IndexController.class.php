@@ -3,6 +3,13 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
 
+    public $json=[
+        'status'=>1,//数据传输状态 1：成功，0：失败
+        'message'=>'',
+        'music'=>0,//是否开启音乐 1：播放，0：停止播放，-1暂停播放
+        'musicurl'=>0,
+        'vedio'=>0//是否进行视频通话 1：开始，0：停止
+    ];
 
     public function index(){
         $action=I('action');//行为规范
@@ -13,13 +20,19 @@ class IndexController extends Controller {
                 break;
             case 2:
                 $this->getData();
-                echo $hdata;
+                break;
+            case 3:
+                $this->music();
                 break;
             default: $this->ajaxReturn([
                 'status'=>0,
                 'message'=>'sorry,this is error!'
             ]);//status:0返回值错误；1：传输成功
         }
+    }
+
+    public function music(){
+        $this->json['music']=1;
     }
 
     /*
@@ -81,10 +94,9 @@ class IndexController extends Controller {
                 ]);
             }
         }else{
-            $this->ajaxReturn([
-                'status'=>0,
-                'message'=>'sorry,this is error!'
-            ]);
+            $this->json['status']=0;
+            $this->json['message']="数据格式错误";
+            $this->ajaxReturn($this->json);
         }
 
     }
