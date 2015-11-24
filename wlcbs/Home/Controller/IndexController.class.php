@@ -7,7 +7,7 @@ class IndexController extends Controller {
         'status'=>1,//数据传输状态 1：成功，0：失败
         'message'=>'',
         'music'=>0,//是否开启音乐 1：播放，0：停止播放，-1暂停播放
-        'musicurl'=>0,
+        'musicurl'=>'',
         'vedio'=>0//是否进行视频通话 1：开始，0：停止
     ];
 
@@ -21,9 +21,6 @@ class IndexController extends Controller {
             case 2:
                 $this->getData();
                 break;
-            case 3:
-                $this->music();
-                break;
             default: $this->ajaxReturn([
                 'status'=>0,
                 'message'=>'sorry,this is error!'
@@ -31,8 +28,9 @@ class IndexController extends Controller {
         }
     }
 
-    public function music(){
-        $this->json['music']=1;
+    public function music($url){
+        session('music',1);
+        $this->ajaxReturn(session('music'));
     }
 
     /*
@@ -76,28 +74,23 @@ class IndexController extends Controller {
      *
      **/
     public function putData($data1){
-        $hdata['data']=$data1;
-        $hdata['ctime']=time();
-        $hdata['uid']=1;
-        if($hdata['data']>10000&&$hdata['data']<49999){
-            $wlcbs=M('data');
-            $result=$wlcbs->add($hdata);
-            if($result){
-                $this->ajaxReturn([
-                    'status'=>1,
-                    'message'=>'恭喜你上传成功！'
-                ]);
+            $hdata['data']=$data1;
+            $hdata['ctime']=time();
+            $hdata['uid']=1;
+            if($hdata['data']>10000&&$hdata['data']<49999){
+                $wlcbs=M('data');
+                $result=$wlcbs->add($hdata);
+                if($result){
+                    $this->setJson(1,'恭喜你上传成功');
+                    $this->ajaxReturn($this->json);
+                }else{
+                    $this->setJson(0,"数据格式错误");
+                    $this->ajaxReturn($this->json);
+                }
             }else{
-                $this->ajaxReturn([
-                    'status'=>0,
-                    'message'=>'sorry,this is error!'
-                ]);
+                $this->setJson(0,"数据格式错误");
+                $this->ajaxReturn($this->json);
             }
-        }else{
-            $this->json['status']=0;
-            $this->json['message']="数据格式错误";
-            $this->ajaxReturn($this->json);
-        }
 
     }
 
@@ -134,6 +127,20 @@ class IndexController extends Controller {
         }
 
     }
+
+    public function setJson($status,$message){
+        $this->json['status']=$status;
+        $this->json['message']=$message;
+        $a=['music','musicurl','vedio'];
+        foreach($a as $k=>$v){
+            if(session($v)){
+                $this->json[$v]=session($v);
+                session($v,null);
+            }
+        }
+    }
+
+
 
 //    /*
 //     * 用于检测数据数组是否有4个值，并且每一个值大于0
