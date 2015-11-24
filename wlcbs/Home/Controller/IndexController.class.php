@@ -28,9 +28,14 @@ class IndexController extends Controller {
         }
     }
 
-    public function music($url){
-        session('music',1);
-        $this->ajaxReturn(session('music'));
+    public function music($act,$url=1){
+        if($url!=1){
+            $data['musicurl']=$url;
+        }
+        $data['music']=$act;
+        $data['ctime']=time();
+        $log=M('log');
+        $log->add($data);
     }
 
     /*
@@ -128,16 +133,22 @@ class IndexController extends Controller {
 
     }
 
-    public function setJson($status,$message){
-        $this->json['status']=$status;
-        $this->json['message']=$message;
-        $a=['music','musicurl','vedio'];
-        foreach($a as $k=>$v){
-            if(session($v)){
-                $this->json[$v]=session($v);
-                session($v,null);
-            }
+    public function setJson($status,$message)
+    {
+        $this->json['status'] = $status;
+        $this->json['message'] = $message;
+        $log = M('log');
+        $data = $log->order('id DESC')->limit('1')->select();
+//        print_r($data);
+        $this->json['music'] = $data[0]['music'];
+        $this->json['musicurl'] = $data[0]['musicurl'];
+        $this->json['vedio'] = $data[0]['vedio'];
+        if($data[0]['music']!=2||$data[0]['vedio']!=2){
+            $data1['ctime']=time();
+            $log->add($data1);
         }
+
+
     }
 
 
