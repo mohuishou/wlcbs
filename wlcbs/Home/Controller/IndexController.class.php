@@ -38,6 +38,13 @@ class IndexController extends Controller {
         $log->add($data);
     }
 
+    public function vedio($act){
+        $data['vedio']=$act;
+        $data['ctime']=time();
+        $log=M('log');
+        $log->add($data);
+    }
+
     /*
      * get数据模块，用于客户端接收数据
      * 每一次接收从数据库获取最近10条数据
